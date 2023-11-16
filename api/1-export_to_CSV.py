@@ -21,7 +21,7 @@ if __name__ == "__main__":
         # jsonise to get data
         employee_data = employee_request.json()
         # get emplyee info
-        employee_name = employee_data.get('name')
+        employee_name = employee_data.get('username')
 
         # get todo list
         todo_request = requests.get(f'{api_url}todos?userId={employee_id}')
@@ -37,12 +37,14 @@ if __name__ == "__main__":
         # add tasks to csv data
         for task in todo_data:
             if task['completed']:
+                title = task.get('title')
                 data_to_add = [f"{employee_id}", f"{employee_name}",
-                               "True", f"{task['title']}"]
+                               "True", f"{title}"]
                 csv_data.append(data_to_add)
             else:
+                title = task.get('title')
                 data_to_add = [f"{employee_id}", f"{employee_name}",
-                               "False", f"{task['title']}"]
+                               "False", f"{title}"]
                 csv_data.append(data_to_add)
 
         # open file and write data
