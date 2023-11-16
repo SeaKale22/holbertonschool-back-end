@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Uses API to return info on given employee's progress"""
 
 import requests
