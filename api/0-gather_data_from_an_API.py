@@ -35,7 +35,7 @@ if __name__ == "__main__":
         # Print the titles of completed tasks
         for task in todo_data:
             if task['completed']:
-                print(f"\t{task['title']}")
+                print(f"\t {task['title']}")
 
     # Get the employee ID from the command-line arguments
     employee_id = sys.argv[1]
