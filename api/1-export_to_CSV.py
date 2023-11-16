@@ -50,7 +50,7 @@ if __name__ == "__main__":
         # open file and write data
         with open(csv_file_name, 'w', newline='') as file:
             # Create a CSV writer object
-            csv_writer = csv.writer(file)
+            csv_writer = csv.writer(file, quoting=csv.QUOTE_ALL)
             # Write the data to the CSV file
             csv_writer.writerows(csv_data)
 
