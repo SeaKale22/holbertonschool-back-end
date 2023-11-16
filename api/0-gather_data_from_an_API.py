@@ -37,7 +37,6 @@ if __name__ == "__main__":
             if task['completed']:
                 print(f"\t{task['title']}")
 
-
     # Get the employee ID from the command-line arguments
     employee_id = sys.argv[1]
     # Call the function to get and display employee TODO list progress

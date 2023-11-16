@@ -52,7 +52,6 @@ if __name__ == "__main__":
             # Write the data to the CSV file
             csv_writer.writerows(csv_data)
 
-
     # Get the employee ID from the command-line arguments
     employee_id = sys.argv[1]
     # Call the function to get and display employee TODO list progress
