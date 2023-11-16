@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Uses API to return info on given employee's progress"""
+"""
+Uses API to return info on given employee's progress
+"""
 
 import requests
 import sys
 
 
 def employee_to_do_progress(employee_id):
-    """method for getting data from api"""
+    """
+    method for getting data from api
+    """
     # define api url
     api_url = 'https://jsonplaceholder.typicode.com/'
 
