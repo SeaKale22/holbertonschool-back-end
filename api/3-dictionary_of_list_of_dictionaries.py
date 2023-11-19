@@ -31,7 +31,8 @@ if __name__ == "__main__":
             # create task list
             tasks_list = []
             for task in tasks_data:
-                tasks_list.append({"username": username, "task": task['title'], "completed": task['completed']})
+                tasks_list.append({"username": username, "task": task['title'],
+                                  "completed": task['completed']})
             # Add the tasks list to the organized data
             organized_data[user_id] = tasks_list
 
